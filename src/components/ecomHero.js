@@ -72,7 +72,7 @@ function EcomHero() {
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.1"
                 width="1024"
-                className="w-5/6 text-yellow-200"
+                className="w-5/6 text-gray-100"
                 viewBox="0 0 24 24"
               >
                 <path
