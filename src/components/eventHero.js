@@ -5,13 +5,13 @@ function EventHero() {
   return (
       <div> 
     <div className="my-6 md:my-8 relative h-80 md:h-96 mx-auto w-4/5 md:w-2/3 ">
-    <div className="w-full absolute top-4 md:top-6 left-4 md:left-6 z-20 bg-gray-200 shadow h-80 md:h-96 ">
+    <div className="w-full absolute top-4 md:top-6 left-4 md:left-6 z-20 bg-gray-50 shadow-xl h-80 md:h-96 border-2 border-indigo-500">
       <div className="p-2">
         <div className="w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 text-gray-600">
           Name
         </div>
         <div className="w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
-          Jane Doe
+          Event Attendee
         </div>
 
         <div className="w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-4 text-gray-600">
@@ -111,8 +111,8 @@ function EventHero() {
 
       </div>
     </div>
-    <div className="w-full absolute top-2 md:top-3 left-2 md:left-3 z-10 bg-gray-100 shadow h-80 md:h-96 -translate-y-20 translate-x-2"></div>
-    <div className="w-full absolute top-0 z-0 bg-gray-50 shadow h-80 md:h-96 -translate-y-20 translate-x-4"></div>
+    <div className="w-full absolute top-2 md:top-3 left-2 md:left-3 z-10 bg-gray-50 shadow-xl h-80 md:h-96 -translate-y-20 translate-x-2 border-2 border-yellow-500"></div>
+    <div className="w-full absolute top-0 z-0 bg-gray-50 shadow-xl h-80 md:h-96 -translate-y-20 translate-x-4 border-2 border-black"></div>
   </div>
 
 <div className="mt-16 mx-auto w-full">

@@ -40,7 +40,7 @@ function App() {
         </div>
         <div className="w-full">
           <div className="cursor-pointer w-1/3 bg-indigo-500 text-white text-center" onClick={() => setShowHero(0)}>
-            For Products
+            For Services
           </div>
 
           <div className="cursor-pointer w-1/3 bg-indigo-500 text-white text-center" onClick={() => setShowHero(1)}>
