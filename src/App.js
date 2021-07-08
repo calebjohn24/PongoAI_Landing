@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./styles/output.css";
 
 import ServiceHero from "./components/serviceHero";
-import EcomHero from "./components/ecomHero";
-import EventHero from "./components/eventHero";
+import EcomHero from "./components/storeHero";
+import EventHero from "./components/venueHero";
 
 function App() {
   const [showHero, setShowHero] = useState(0);
 
-  const titles = ["Services","Stores","Events"];
+  const titles = ["Services","Stores","Venues"];
 
   function Hero(){
     if(showHero === 0){

@@ -7,14 +7,30 @@ function EcomHero() {
       <div className="my-6 md:my-8 relative h-96 md:h-128 mx-auto w-4/5 md:w-2/3 ">
         <div className="w-full absolute top-4 md:top-6 left-4 md:left-6 z-20 bg-gray-50 shadow-xl h-96 md:h-128 border-2 border-black">
           <div className="p-2">
-            <div className="w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 text-gray-600">
+          <div className=" w-full p-1 font-semibold text-xs md:text-base text-black text-right flex items-center content-end">
+              <div>
+                <svg xmlns= "http://www.w3.org/2000/svg" version="1.1" width="1024" className="w-6 md:w-8 mr-1"viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12,18H6V14H12M21,14V12L20,7H4L3,12V14H4V20H14V14H18V20H20V14M20,4H4V6H20V4Z" />
+                </svg>
+              </div>
+              <div> 
+              Clothing Store
+              </div>
+            </div>
+            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 text-gray-600">
               Name
             </div>
-            <div className="w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
-              Product Owner
+            <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
+              Store Customer
+            </div>
+            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 text-gray-600">
+              Product Purchased
+            </div>
+            <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
+              Medium T-Shirt
             </div>
 
-            <div className="w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-4 text-gray-600">
+            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-4 text-gray-600">
               How would you rate your product?
             </div>
             <div className="w-5/6 mx-auto p-1 mt-1">
@@ -102,11 +118,11 @@ function EcomHero() {
               </div>
             </div>
 
-            <div className="w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-4 text-gray-600">
-              How would you describe your experience with our product?
+            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 md:mt-4 text-gray-600">
+              How would you describe your experience with your product?
             </div>
-            <div className="w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
-              My service was mostly enjoyable, however
+            <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
+              I really liked the style and quality, but the sleeves were a little too tight.
             </div>
           </div>
         </div>
