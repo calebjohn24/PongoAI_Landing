@@ -1,5 +1,63 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, PureComponent } from "react";
+import {
+  PieChart,
+  Pie,
+  Sector,
+  Cell,
+  ResponsiveContainer,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend
+} from "recharts";
 import "../styles/output.css";
+
+const dataBar = [
+  {
+    name: 'Timely',
+    responses: 922,
+  },
+  {
+    name: 'Professional',
+    responses: 442,
+  },
+  {
+    name: 'Quality',
+    responses: 801,
+  },
+
+];
+
+const data = [
+  { name: "Yes", value: 710 },
+  { name: "No", value: 134 },
+];
+
+const COLORS = ["#10B981", "#EF4444"];
+
+const RADIAN = Math.PI / 180;
+const renderCustomizedLabel = ({
+  cx,
+  cy,
+  midAngle,
+  innerRadius,
+  outerRadius,
+  percent,
+  index,
+}) => {
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+  return (
+    <text
+      x={x}
+      y={y}
+      fill="white"
+      textAnchor={x > cx ? "start" : "end"}
+      dominantBaseline="central"
+    >
+      {data[index]['name']}
+    </text>
+  );
+};
 
 function ServiceHero() {
   return (
@@ -7,7 +65,7 @@ function ServiceHero() {
       <div className="my-6 md:my-8 relative h-96 md:h-128 mx-auto w-4/5 md:w-2/3 ">
         <div className="w-full absolute top-4 md:top-6 left-4 md:left-6 z-20 bg-gray-50 shadow-xl h-96 md:h-128 border-yellow-500 border-2">
           <div className="p-2">
-            <div className=" w-full p-1 font-semibold text-xs md:text-base text-black text-right flex items-center content-end">
+            <div className=" w-full p-1  text-xs md:text-base text-black text-right flex items-center content-end">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -24,13 +82,13 @@ function ServiceHero() {
               </div>
               <div>Plumbing Company</div>
             </div>
-            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 text-gray-600">
+            <div className="w-11/12 md:w-5/6 mx-auto p-1  text-xs md:text-base mt-2 text-gray-600">
               Name
             </div>
             <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
               Service Customer
             </div>
-            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-4 text-gray-600">
+            <div className="w-11/12 md:w-5/6 mx-auto p-1  text-xs md:text-base mt-4 text-gray-600">
               How would you rate your experience?
             </div>
             <div className="w-5/6 mx-auto p-1 mt-1">
@@ -117,7 +175,7 @@ function ServiceHero() {
                 </div>
               </div>
             </div>
-            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 text-gray-600">
+            <div className="w-11/12 md:w-5/6 mx-auto p-1  text-xs md:text-base mt-2 text-gray-600">
               Were we able to fix your problem today?
             </div>
             <div className="w-11/12 md:w-5/6 mx-auto mt-1 md:mt-2 grid grid-cols-2 gap-2">
@@ -151,7 +209,7 @@ function ServiceHero() {
               </div>
             </div>
 
-            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 md:mt-4 text-gray-600">
+            <div className="w-11/12 md:w-5/6 mx-auto p-1  text-xs md:text-base mt-2 md:mt-4 text-gray-600">
               How would you describe your experience with our service?
             </div>
             <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
@@ -164,11 +222,8 @@ function ServiceHero() {
         <div className="w-full absolute top-0 z-0 bg-gray-200 shadow-xl h-96 md:h-128 -translate-y-20 translate-x-4 border-2 border-indigo-400"></div>
       </div>
 
-      <div className="text-center text-xs md:text-sm font-bold text-gray-600 mt-16 ">
-          NLP Engine Extracts what's important
-        </div>
 
-      <div className="mt-4 mx-auto w-full">
+      <div className="mt-16 mx-auto w-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -183,14 +238,61 @@ function ServiceHero() {
         </svg>
       </div>
 
-      <div className="mt-4 mx-auto w-11/2 md:5/6">
-        <div className="grid grid-cols-2 gap-2 mx-auto">
-            <div className="mx-auto">
-
+      <div className="mt-4 mx-auto w-11/12 md:5/6">
+        <div className="mx-auto h-full">
+          <div className="mx-auto h-full w-full">
+            <div className="font-bold text-gray-500 text-xs md:text-sm w-full text-center">
+              Was the customer's problem resolved?
             </div>
-            <div className="mx-auto">
-              
+            <div className="mx-auto h-25vh w-full mt-1">
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart >
+                <Pie
+                  data={data}
+                  cx="50%"
+                  cy="50%"
+                  labelLine={false}
+                  label={renderCustomizedLabel}
+                  outerRadius={80}
+                  fill="#000000"
+                  dataKey="value"
+                >
+                  {data.map((entry, index) => (
+                    <Cell
+                      key={`cell-${index}`}
+                      fill={COLORS[index % COLORS.length]}
+                    />
+                  ))}
+                </Pie>
+                <Tooltip coordinate={{ x: 2, y: 3 }} />
+              </PieChart>
+              </ResponsiveContainer>
             </div>
+          </div>
+          <div className="mx-auto">
+            <div className="font-bold text-gray-500 text-xs md:text-sm w-full text-center mt-4 md:mt-0">
+              What Customers liked
+            </div>
+            <div className="h-25vh w-full md:w-3/5 mt-2 mx-auto">
+            <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+          data={dataBar}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+          barSize={20}
+        >
+          <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
+          <Tooltip />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Bar dataKey="responses" fill="#6366F1" background={{ fill: '#eee' }} />
+        </BarChart>
+        </ResponsiveContainer>
+            </div>
+          </div>
         </div>
       </div>
     </div>
