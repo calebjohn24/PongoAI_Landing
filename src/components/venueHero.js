@@ -1,7 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, PureComponent } from "react";
 import "../styles/output.css";
+import {
+  Radar,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  ResponsiveContainer,
+} from "recharts";
 
 function EventHero() {
+  const data = [
+    {
+      subject: "Pool",
+      A: 86,
+      fullMark: 100,
+    },
+    {
+      subject: "Staff",
+      A: 94,
+      fullMark: 100,
+    },
+    {
+      subject: "Food",
+      A: 80,
+      fullMark: 100,
+    },
+    {
+      subject: "Utilities",
+      A: 35,
+      fullMark: 100,
+    },
+  ];
+
   return (
     <div>
       <div className="my-6 md:my-8 relative h-96 md:h-128 mx-auto w-4/5 md:w-2/3 ">
@@ -29,12 +60,6 @@ function EventHero() {
             </div>
             <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
               Hotel Guest
-            </div>
-            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 text-gray-600">
-              Room Type
-            </div>
-            <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
-              Suite
             </div>
 
             <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-4 text-gray-600">
@@ -125,12 +150,19 @@ function EventHero() {
               </div>
             </div>
 
-            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 md:mt-4 text-gray-600">
-              How would you describe your experience with our hotel?
+            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-1 md:mt-2 text-gray-600">
+              What was the best part of your experience at our hotel?
             </div>
             <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
-              Fridge was broken, other than that my stay was great, and I
-              enjoyed the pool.
+              Staff was friendly, and I enjoyed the pool and breakfast
+              buffet
+            </div>
+
+            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-1 md:mt-2 text-gray-600">
+              How would you describe your experience with your room?
+            </div>
+            <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
+              Fridge was broken, other than that my room was great.
             </div>
           </div>
         </div>
@@ -138,7 +170,11 @@ function EventHero() {
         <div className="w-full absolute top-0 z-0 bg-gray-200 shadow-xl h-96 md:h-128 -translate-y-20 translate-x-4 border-2 border-gray-700"></div>
       </div>
 
-      <div className="mt-16 mx-auto w-full">
+      <div className="text-center text-xs md:text-sm font-bold text-gray-600 mt-16 ">
+          NLP Engine Extracts what's important
+        </div>
+
+      <div className="mt-4 mx-auto w-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -151,6 +187,28 @@ function EventHero() {
             d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"
           />
         </svg>
+      </div>
+
+      <div className="mt-4 mx-auto w-11/2 md:5/6">
+        
+        <div className="w-full h-25vh mt-4">
+          <ResponsiveContainer width="100%" height="100%">
+            <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
+              <PolarGrid />
+              <PolarAngleAxis dataKey="subject" />
+              <PolarRadiusAxis />
+              <Radar
+                name="VenueChart"
+                dataKey="A"
+                stroke="#6366F1
+"
+                fill="#6366F1
+"
+                fillOpacity={0.6}
+              />
+            </RadarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </div>
   );

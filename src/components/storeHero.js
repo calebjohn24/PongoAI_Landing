@@ -138,7 +138,11 @@ function EcomHero() {
         <div className="w-full absolute top-0 z-0 bg-gray-200 shadow-xl h-96 md:h-128 -translate-y-20 translate-x-4 border-2 border-yellow-400"></div>
       </div>
 
-      <div className="mt-16 mx-auto w-full">
+      <div className="text-center text-xs md:text-sm font-bold text-gray-600 mt-16 ">
+          NLP Engine Extracts what's important
+        </div>
+
+      <div className="mt-4 mx-auto w-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -152,7 +156,7 @@ function EcomHero() {
           />
         </svg>
       </div>
-      <div className=""></div>
+
     </div>
   );
 }

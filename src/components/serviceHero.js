@@ -30,13 +30,6 @@ function ServiceHero() {
             <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
               Service Customer
             </div>
-            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 text-gray-600">
-              Service Type
-            </div>
-            <div className="w-11/12 md:w-5/6 mx-auto border-2 border-black p-1 font-mono text-xs md:text-sm mt-1">
-              Suite
-            </div>
-
             <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-4 text-gray-600">
               How would you rate your experience?
             </div>
@@ -124,6 +117,39 @@ function ServiceHero() {
                 </div>
               </div>
             </div>
+            <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 text-gray-600">
+              Were we able to fix your problem today?
+            </div>
+            <div className="w-11/12 md:w-5/6 mx-auto mt-1 md:mt-2 grid grid-cols-2 gap-2">
+              <div className="mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="1024"
+                  className="w-5 md:w-8 text-green-500"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z"
+                  />
+                </svg>
+              </div>
+              <div className="mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="1024"
+                  className="w-5 md:w-8  text-gray-400"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z"
+                  />
+                </svg>
+              </div>
+            </div>
 
             <div className="w-11/12 md:w-5/6 mx-auto p-1 font-semibold text-xs md:text-base mt-2 md:mt-4 text-gray-600">
               How would you describe your experience with our service?
@@ -138,7 +164,11 @@ function ServiceHero() {
         <div className="w-full absolute top-0 z-0 bg-gray-200 shadow-xl h-96 md:h-128 -translate-y-20 translate-x-4 border-2 border-indigo-400"></div>
       </div>
 
-      <div className="mt-16 mx-auto w-full">
+      <div className="text-center text-xs md:text-sm font-bold text-gray-600 mt-16 ">
+          NLP Engine Extracts what's important
+        </div>
+
+      <div className="mt-4 mx-auto w-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -152,7 +182,17 @@ function ServiceHero() {
           />
         </svg>
       </div>
-      <div className=""></div>
+
+      <div className="mt-4 mx-auto w-11/2 md:5/6">
+        <div className="grid grid-cols-2 gap-2 mx-auto">
+            <div className="mx-auto">
+
+            </div>
+            <div className="mx-auto">
+              
+            </div>
+        </div>
+      </div>
     </div>
   );
 }

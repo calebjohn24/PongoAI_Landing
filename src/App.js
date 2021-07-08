@@ -40,7 +40,7 @@ function App() {
   }
 
   return (
-    <div className="w-screen min-h-screen bg-gray-100">
+    <div className="w-screen min-h-screen bg-gray-60">
       <div className="flex flex-wrap p-3 items-center content-center justify-items-start">
         <img
           src={"./logo.svg"}
@@ -54,7 +54,7 @@ function App() {
         <div className="text-lg md:text-xl text-yellow-500 font-bold">AI</div>
       </div>
 
-      <div className="w-11/12 md:w-3/5 mx-auto bg-white shadow-xl mt-6 p-2">
+      <div className="w-11/12 md:w-3/5 mx-auto bg-white shadow-2xl mt-6 p-2">
         <div className="p-2 text-center text-sm md:text-lg text-gray-700 font-bold">
           Turn user feedback into actionable insights powered by AI
         </div>
@@ -80,7 +80,7 @@ function App() {
 
 
 
-
+      <div className="mt-32"></div>
     </div>
   );
 }
