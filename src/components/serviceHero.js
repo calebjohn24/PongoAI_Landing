@@ -5,24 +5,29 @@ import {
   Sector,
   Cell,
   ResponsiveContainer,
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
 } from "recharts";
 import "../styles/output.css";
 
 const dataBar = [
   {
-    name: 'Timely',
+    name: "Timely",
     responses: 922,
   },
   {
-    name: 'Professional',
+    name: "Professional",
     responses: 442,
   },
   {
-    name: 'Quality',
+    name: "Quality",
     responses: 801,
   },
-
 ];
 
 const data = [
@@ -54,7 +59,7 @@ const renderCustomizedLabel = ({
       textAnchor={x > cx ? "start" : "end"}
       dominantBaseline="central"
     >
-      {data[index]['name']}
+      {data[index]["name"]}
     </text>
   );
 };
@@ -181,46 +186,38 @@ function ServiceHero() {
             <div className="w-11/12 md:w-5/6 mx-auto mt-1 md:mt-2 grid grid-cols-2 gap-2">
               <div className="mx-auto text-center">
                 <div className="text-xs md:text-sm bg-green-500 text-white flex py-1 px-2 items-center content-center align-middle">
-                  <div>Yes</div> 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  width="1024"
-                  className="ml-1 w-3 md:w-8"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z"
-                  />
-                </svg>
-
+                  <div>Yes</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="1024"
+                    className="ml-1 w-3 md:w-8"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z"
+                    />
+                  </svg>
                 </div>
-
-
               </div>
               <div className="mx-auto text-center">
                 <div className="text-xs md:text-sm bg-red-400 opacity-40 text-white flex py-1 px-2 items-center content-center align-middle">
-                  <div>No</div> 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  width="1024"
-                  className="ml-1 w-3 md:w-8"
-                  viewBox="0 0 24 24"
-                >
-                 <path
-                    fill="currentColor"
-                    d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z"
-                  />
-                </svg>
-
+                  <div>No</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="1024"
+                    className="ml-1 w-3 md:w-8"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z"
+                    />
+                  </svg>
                 </div>
-
-
               </div>
-        
-              
             </div>
 
             <div className="w-11/12 md:w-5/6 mx-auto p-1  text-xs md:text-base mt-2 md:mt-4 text-gray-600">
@@ -235,7 +232,6 @@ function ServiceHero() {
         <div className="w-full absolute top-2 md:top-3 left-2 md:left-3 z-10 bg-gray-100 shadow-xl h-96 md:h-128 -translate-y-20 translate-x-2 border-2 border-gray-700"></div>
         <div className="w-full absolute top-0 z-0 bg-gray-200 shadow-xl h-96 md:h-128 -translate-y-20 translate-x-4 border-2 border-indigo-400"></div>
       </div>
-
 
       <div className="mt-16 mx-auto w-full">
         <svg
@@ -259,27 +255,27 @@ function ServiceHero() {
               Was the customer's problem resolved?
             </div>
             <div className="mx-auto h-25vh w-full mt-1">
-            <ResponsiveContainer width="100%" height="100%">
-              <PieChart >
-                <Pie
-                  data={data}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={false}
-                  label={renderCustomizedLabel}
-                  outerRadius={80}
-                  fill="#000000"
-                  dataKey="value"
-                >
-                  {data.map((entry, index) => (
-                    <Cell
-                      key={`cell-${index}`}
-                      fill={COLORS[index % COLORS.length]}
-                    />
-                  ))}
-                </Pie>
-                <Tooltip coordinate={{ x: 2, y: 3 }} />
-              </PieChart>
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={data}
+                    cx="50%"
+                    cy="50%"
+                    labelLine={false}
+                    label={renderCustomizedLabel}
+                    outerRadius={80}
+                    fill="#000000"
+                    dataKey="value"
+                  >
+                    {data.map((entry, index) => (
+                      <Cell
+                        key={`cell-${index}`}
+                        fill={COLORS[index % COLORS.length]}
+                      />
+                    ))}
+                  </Pie>
+                  <Tooltip coordinate={{ x: 2, y: 3 }} />
+                </PieChart>
               </ResponsiveContainer>
             </div>
           </div>
@@ -288,23 +284,31 @@ function ServiceHero() {
               What Customers liked
             </div>
             <div className="h-25vh w-full md:w-3/5 mt-2 mx-auto">
-            <ResponsiveContainer width="100%" height="100%">
-            <BarChart
-          data={dataBar}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-          barSize={20}
-        >
-          <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
-          <Tooltip />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Bar dataKey="responses" fill="#6366F1" background={{ fill: '#eee' }} />
-        </BarChart>
-        </ResponsiveContainer>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                  data={dataBar}
+                  margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                  }}
+                  barSize={20}
+                >
+                  <XAxis
+                    dataKey="name"
+                    scale="point"
+                    padding={{ left: 10, right: 10 }}
+                  />
+                  <Tooltip />
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <Bar
+                    dataKey="responses"
+                    fill="#6366F1"
+                    background={{ fill: "#eee" }}
+                  />
+                </BarChart>
+              </ResponsiveContainer>
             </div>
           </div>
         </div>

@@ -103,7 +103,7 @@ function App() {
 
       <div className="w-11/12 md:w-3/5 mx-auto bg-white shadow-2xl mt-8 p-2">
         <div className="p-2 text-center text-sm md:text-lg text-gray-700 font-bold">
-          Tailor feedback forms and surveys to your needs
+          Tailor feedback forms to your needs
         </div>
         <div className="p-2 text-center text-xs md:text-base text-gray-600 font-bold">
           With conditional logic and different question types, build the perfect
@@ -119,7 +119,7 @@ function App() {
         <div className="p-2 text-center text-xs md:text-base text-gray-600 font-bold">
           Setup automatic emails and follow-ups after orders and appointments
         </div>
-        <AutomateHero/>
+        <AutomateHero />
       </div>
 
       <div className="w-11/12 md:w-3/5 mx-auto bg-white shadow-2xl mt-8 p-2">
@@ -128,7 +128,7 @@ function App() {
         </div>
         <div className="mx-auto mt-4 w-11/12 md:w-3/5 mb-8">
           <div className="flex flex-wrap mx-auto items-center content-center justify-center">
-            <ContactForm/>
+            <ContactForm />
           </div>
         </div>
       </div>

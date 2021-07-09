@@ -2,7 +2,7 @@ import React from "react";
 
 function FormHero() {
   return (
-    <div className="mt-4 w-full">
+    <div className="mt-4 w-full font-mono">
       <div className="w-11/12 md:w-5/6 mx-auto p-1  text-xs md:text-base my-4 text-gray-600 text-center">
         How would you rate your experience?
       </div>
