@@ -4,6 +4,8 @@ import "./styles/output.css";
 import ServiceHero from "./components/serviceHero";
 import EcomHero from "./components/storeHero";
 import EventHero from "./components/venueHero";
+import FormHero from "./components/formHero";
+import AutomateHero from "./components/automateHero";
 
 function App() {
   const [showHero, setShowHero] = useState(0);
@@ -102,43 +104,50 @@ function App() {
         <div className="p-2 text-center text-sm md:text-lg text-gray-700 font-bold">
           Tailor feedback forms and surveys to your needs
         </div>
-
+        <div className="p-2 text-center text-xs md:text-base text-gray-600 font-bold">
+          With conditional logic and different question types, build the perfect
+          survey for your business.
         </div>
+        <FormHero />
+      </div>
 
-
-        <div className="w-11/12 md:w-3/5 mx-auto bg-white shadow-2xl mt-8 p-2">
+      <div className="w-11/12 md:w-3/5 mx-auto bg-white shadow-2xl mt-8 p-2">
         <div className="p-2 text-center text-sm md:text-lg text-gray-700 font-bold">
           Automate feedback collection
         </div>
-        
+        <div className="p-2 text-center text-xs md:text-base text-gray-600 font-bold">
+          Setup automatic emails and follow-ups after orders and appointments
         </div>
+        <AutomateHero/>
+      </div>
 
-
-
-        <div className="w-11/12 md:w-3/5 mx-auto bg-white shadow-2xl mt-8 p-2">
+      <div className="w-11/12 md:w-3/5 mx-auto bg-white shadow-2xl mt-8 p-2">
         <div className="p-2 text-center text-sm md:text-lg text-gray-700">
-          Join the waitlist 
+          Join the waitlist
         </div>
-        <div className="mx-auto mt-4 w-11/12 md:w-3/5">
-        <div className="flex flex-wrap mx-auto items-center content-center justify-center"> 
-        <form action="https://formspree.io/f/{form_id}" method="post">
-   
-
-  <input className="border-2 border-gray-500 focus:border-indigo-500 focus:outline-none ring-0 mr-2 p-1 text-gray-700 font-mono" placeholder="example@email.com" type={"email"} required/>
-  <button className="bg-indigo-500 hover:bg-indigo-600 transform hover:scale-105 px-3 py-2 text-white" type="submit">
-    Join
-  </button>
-
-
-</form>
-</div>
+        <div className="mx-auto mt-4 w-11/12 md:w-3/5 mb-8">
+          <div className="flex flex-wrap mx-auto items-center content-center justify-center">
+            <form action="https://formspree.io/f/xjvjebrj" method="post">
+              <input
+                className="border-2 border-gray-500 focus:border-indigo-500 focus:outline-none ring-0 mr-2 p-1 text-gray-700 font-mono"
+                placeholder="example@email.com"
+                type={"email"}
+                required
+                name="_replyto"
+              />
+              <button
+                className="bg-indigo-500 hover:bg-indigo-600 transform hover:scale-105 px-3 py-2 text-white"
+                type="submit"
+              >
+                Join
+              </button>
+            </form>
+          </div>
         </div>
-        
-        </div>
-  
+      </div>
 
-      <footer className="mt-32 bg-gray-100 text-center p-2">
-        <p className="text-gray-600 text-xs">© PongoAI 2021</p>
+      <footer className="mt-24 md:mt-32 bg-gray-100 text-center p-2">
+        <p className="text-gray-600 text-xs">© PongoAI 2021.</p>
       </footer>
     </div>
   );
