@@ -2,4 +2,4 @@
 
 Built with react and TailwindCSS
 
-### View <a href="https://calebjohn24.github.io/PongoAI_Landing/">Here</a>
+### View <a href="https://pongoai.com">Here</a>
