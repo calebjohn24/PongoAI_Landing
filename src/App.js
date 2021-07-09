@@ -6,6 +6,7 @@ import EcomHero from "./components/storeHero";
 import EventHero from "./components/venueHero";
 import FormHero from "./components/formHero";
 import AutomateHero from "./components/automateHero";
+import ContactForm from "./components/contactForm";
 
 function App() {
   const [showHero, setShowHero] = useState(0);
@@ -127,21 +128,7 @@ function App() {
         </div>
         <div className="mx-auto mt-4 w-11/12 md:w-3/5 mb-8">
           <div className="flex flex-wrap mx-auto items-center content-center justify-center">
-            <form action="https://formspree.io/f/xjvjebrj" method="post">
-              <input
-                className="border-2 border-gray-500 focus:border-indigo-500 focus:outline-none ring-0 mr-2 p-1 text-gray-700 font-mono"
-                placeholder="example@email.com"
-                type={"email"}
-                required
-                name="_replyto"
-              />
-              <button
-                className="bg-indigo-500 hover:bg-indigo-600 transform hover:scale-105 px-3 py-2 text-white"
-                type="submit"
-              >
-                Join
-              </button>
-            </form>
+            <ContactForm/>
           </div>
         </div>
       </div>
