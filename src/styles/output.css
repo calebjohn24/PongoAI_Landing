@@ -358,7 +358,7 @@ ul {
  */
 
 html {
-  font-family: Ubuntu, ui-sans-serif, system-ui; /* 1 */
+  font-family: Inter, ui-sans-serif, system-ui; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -497,7 +497,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Ubuntu Mono, ui-monospace, SFMono-Regular;
+  font-family: Inconsolata, ui-monospace, SFMono-Regular;
 }
 
 /**
@@ -22504,15 +22504,15 @@ video {
 }
 
 .font-sans{
-  font-family: Ubuntu, ui-sans-serif, system-ui;
+  font-family: Inter, ui-sans-serif, system-ui;
 }
 
 .font-serif{
-  font-family: Ubuntu, ui-serif, Georgia;
+  font-family: Inter, ui-serif, Georgia;
 }
 
 .font-mono{
-  font-family: Ubuntu Mono, ui-monospace, SFMono-Regular;
+  font-family: Inconsolata, ui-monospace, SFMono-Regular;
 }
 
 .text-xs{
@@ -52054,15 +52054,15 @@ video {
   }
 
   .sm\:font-sans{
-    font-family: Ubuntu, ui-sans-serif, system-ui;
+    font-family: Inter, ui-sans-serif, system-ui;
   }
 
   .sm\:font-serif{
-    font-family: Ubuntu, ui-serif, Georgia;
+    font-family: Inter, ui-serif, Georgia;
   }
 
   .sm\:font-mono{
-    font-family: Ubuntu Mono, ui-monospace, SFMono-Regular;
+    font-family: Inconsolata, ui-monospace, SFMono-Regular;
   }
 
   .sm\:text-xs{
@@ -81532,15 +81532,15 @@ video {
   }
 
   .md\:font-sans{
-    font-family: Ubuntu, ui-sans-serif, system-ui;
+    font-family: Inter, ui-sans-serif, system-ui;
   }
 
   .md\:font-serif{
-    font-family: Ubuntu, ui-serif, Georgia;
+    font-family: Inter, ui-serif, Georgia;
   }
 
   .md\:font-mono{
-    font-family: Ubuntu Mono, ui-monospace, SFMono-Regular;
+    font-family: Inconsolata, ui-monospace, SFMono-Regular;
   }
 
   .md\:text-xs{
@@ -111010,15 +111010,15 @@ video {
   }
 
   .lg\:font-sans{
-    font-family: Ubuntu, ui-sans-serif, system-ui;
+    font-family: Inter, ui-sans-serif, system-ui;
   }
 
   .lg\:font-serif{
-    font-family: Ubuntu, ui-serif, Georgia;
+    font-family: Inter, ui-serif, Georgia;
   }
 
   .lg\:font-mono{
-    font-family: Ubuntu Mono, ui-monospace, SFMono-Regular;
+    font-family: Inconsolata, ui-monospace, SFMono-Regular;
   }
 
   .lg\:text-xs{
@@ -140488,15 +140488,15 @@ video {
   }
 
   .xl\:font-sans{
-    font-family: Ubuntu, ui-sans-serif, system-ui;
+    font-family: Inter, ui-sans-serif, system-ui;
   }
 
   .xl\:font-serif{
-    font-family: Ubuntu, ui-serif, Georgia;
+    font-family: Inter, ui-serif, Georgia;
   }
 
   .xl\:font-mono{
-    font-family: Ubuntu Mono, ui-monospace, SFMono-Regular;
+    font-family: Inconsolata, ui-monospace, SFMono-Regular;
   }
 
   .xl\:text-xs{
@@ -169966,15 +169966,15 @@ video {
   }
 
   .\32xl\:font-sans{
-    font-family: Ubuntu, ui-sans-serif, system-ui;
+    font-family: Inter, ui-sans-serif, system-ui;
   }
 
   .\32xl\:font-serif{
-    font-family: Ubuntu, ui-serif, Georgia;
+    font-family: Inter, ui-serif, Georgia;
   }
 
   .\32xl\:font-mono{
-    font-family: Ubuntu Mono, ui-monospace, SFMono-Regular;
+    font-family: Inconsolata, ui-monospace, SFMono-Regular;
   }
 
   .\32xl\:text-xs{
