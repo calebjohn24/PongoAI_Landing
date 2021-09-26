@@ -26,9 +26,9 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ["Inter", "ui-sans-serif", "system-ui"],
-      serif: ["Inter", "ui-serif", "Georgia"],
-      mono: ["Inconsolata", "ui-monospace", "SFMono-Regular"],
+      sans: ["Roboto", "ui-sans-serif", "system-ui"],
+      serif: ["Roboto", "ui-serif", "Georgia"],
+      mono: ["Roboto Mono", "ui-monospace", "SFMono-Regular"],
     },
     
     
