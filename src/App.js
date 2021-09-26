@@ -48,10 +48,7 @@ function App() {
           alt="logo"
         />
 
-        <div className="text-lg md:text-xl text-indigo-500 font-bold">
-          Pongo
-        </div>
-        <div className="text-lg md:text-xl text-yellow-500 font-bold">AI</div>
+        <div className="text-lg md:text-xl text-indigo-500 font-bold">PongoAI</div>
       </div>
 
       <div className="w-11/12 md:w-3/5 mx-auto bg-white shadow-2xl mt-6 p-2">
@@ -134,7 +131,7 @@ function App() {
       </div>
 
       <footer className="mt-24 md:mt-32 bg-gray-100 text-center p-2">
-        <p className="text-gray-600 text-xs">© PongoAI 2021.</p>
+        <p className="text-gray-600 text-xs">© Pongo Technologies Inc. 2021.</p>
       </footer>
     </div>
   );
